@@ -12,6 +12,7 @@
 		82CAE7401CC465BD00AE06BE /* stop48.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CAE73E1CC465BD00AE06BE /* stop48.png */; };
 		82CAE7421CC465C400AE06BE /* shuffle48.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CAE7411CC465C400AE06BE /* shuffle48.png */; };
 		82CAE7441CC4680600AE06BE /* audio.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CAE7431CC4680600AE06BE /* audio.png */; };
+		82CAE7461CC46B2B00AE06BE /* fondo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82CAE7451CC46B2B00AE06BE /* fondo.jpg */; };
 		CC829A241CB9D58200BF5AA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC829A231CB9D58200BF5AA6 /* AppDelegate.swift */; };
 		CC829A261CB9D58200BF5AA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC829A251CB9D58200BF5AA6 /* ViewController.swift */; };
 		CC829A291CB9D58200BF5AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC829A271CB9D58200BF5AA6 /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		82CAE73E1CC465BD00AE06BE /* stop48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop48.png; sourceTree = "<group>"; };
 		82CAE7411CC465C400AE06BE /* shuffle48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shuffle48.png; sourceTree = "<group>"; };
 		82CAE7431CC4680600AE06BE /* audio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audio.png; sourceTree = "<group>"; };
+		82CAE7451CC46B2B00AE06BE /* fondo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo.jpg; sourceTree = "<group>"; };
 		CC829A201CB9D58200BF5AA6 /* ReproductorAudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReproductorAudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC829A231CB9D58200BF5AA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC829A251CB9D58200BF5AA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				CC829A271CB9D58200BF5AA6 /* Main.storyboard */,
 				CC829A2A1CB9D58200BF5AA6 /* Assets.xcassets */,
 				CC829A2C1CB9D58200BF5AA6 /* LaunchScreen.storyboard */,
+				82CAE7451CC46B2B00AE06BE /* fondo.jpg */,
 				CC829A2F1CB9D58200BF5AA6 /* Info.plist */,
 				82CAE7431CC4680600AE06BE /* audio.png */,
 				CC829A771CBA08D700BF5AA6 /* aleatorio.png */,
@@ -298,6 +301,7 @@
 				82CAE7441CC4680600AE06BE /* audio.png in Resources */,
 				82CAE7421CC465C400AE06BE /* shuffle48.png in Resources */,
 				CC829A6E1CB9FBEA00BF5AA6 /* c05.mp3 in Resources */,
+				82CAE7461CC46B2B00AE06BE /* fondo.jpg in Resources */,
 				CC829A2E1CB9D58200BF5AA6 /* LaunchScreen.storyboard in Resources */,
 				CC829A641CB9FBAF00BF5AA6 /* c05.jpg in Resources */,
 				CC829A601CB9FBAF00BF5AA6 /* c01.jpg in Resources */,
@@ -487,7 +491,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ReproductorAudioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.morasoft.ReproductorAudioDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = net.morasoft.ReproductorAudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -499,7 +503,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ReproductorAudioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.morasoft.ReproductorAudioDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = net.morasoft.ReproductorAudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

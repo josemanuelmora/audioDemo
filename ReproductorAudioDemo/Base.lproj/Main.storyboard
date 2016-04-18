@@ -18,18 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3H4-cW-dOB">
-                                <rect key="frame" x="15" y="479" width="560" height="121"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="93" id="ruU-Rj-sLi">
-                                        <variation key="widthClass=compact" constant="98"/>
-                                    </constraint>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3E8-YZ-68k"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="egX-cG-SP7"/>
-                                </connections>
-                            </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oej-Ts-uOF">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                </variation>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ntw-J0-ic9">
                                 <rect key="frame" x="15" y="0.0" width="560" height="471"/>
                                 <subviews>
@@ -56,6 +50,8 @@
                                     </textField>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="1" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="L3k-FF-3ca">
                                         <rect key="frame" x="180" y="234" width="94" height="29"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.18809342384338379" green="0.81157380342483521" blue="0.94726890325546265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="volumen:" destination="BYZ-38-t0r" eventType="valueChanged" id="AqG-3N-Pgr"/>
                                         </connections>
@@ -112,7 +108,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Volumen: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ys-lI-cmG">
                                         <rect key="frame" x="187" y="208" width="81" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo / Avance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVC-ya-QMs">
@@ -123,7 +119,7 @@
                                             </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.98939445329999998" green="1" blue="0.96562514269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p3-je-6iH">
@@ -148,7 +144,6 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.8980392157" green="0.94901960780000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="9jJ-CQ-d7W" firstAttribute="top" secondItem="MlR-eB-CBa" secondAttribute="bottom" constant="8" id="4Kj-53-fb8">
                                         <variation key="widthClass=compact" constant="72"/>
@@ -236,6 +231,19 @@
                                     </constraint>
                                 </constraints>
                             </scrollView>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3H4-cW-dOB">
+                                <rect key="frame" x="15" y="479" width="560" height="121"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="ruU-Rj-sLi">
+                                        <variation key="widthClass=compact" constant="98"/>
+                                    </constraint>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3E8-YZ-68k"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="egX-cG-SP7"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -257,6 +265,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="oej-Ts-uOF"/>
                                 <exclude reference="3H4-cW-dOB"/>
                             </mask>
                             <mask key="constraints">
@@ -269,6 +278,7 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="oej-Ts-uOF"/>
                                 <include reference="3H4-cW-dOB"/>
                             </mask>
                             <mask key="constraints">
@@ -297,6 +307,7 @@
     </scenes>
     <resources>
         <image name="c05.jpg" width="245" height="245"/>
+        <image name="fondo.jpg" width="460" height="736"/>
         <image name="pause48.png" width="48" height="48"/>
         <image name="play48.png" width="48" height="48"/>
         <image name="shuffle48.png" width="48" height="48"/>
